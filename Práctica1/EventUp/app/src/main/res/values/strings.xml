@@ -1,0 +1,191 @@
+<resources>
+    <string name="app_name">EventUp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_mis_eventos">Mis Eventos</string>
+    <string name="menu_eventup">EventUp</string>
+    <string name="menu_mi_perfil">Mi Perfil</string>
+    <string name="crear_evento">Crear Evento</string>
+    <string name="editar_evento">Editar Evento</string>
+    <string name="filtrar_evento">Filtrar Eventos</string>
+
+
+    <!-- TABLA USUARIO -->
+    <string name="tabla_usuario">USUARIO</string>
+    <string name="usuario_usuario">USU_USUARIO</string>
+    <string name="usuario_contraseña">USU_CONTRASEÑA</string>
+    <string name="usuario_nombre">USU_NOMBRE</string>
+    <string name="usuario_carrera">USU_CARRERA</string>
+    <string name="usuario_curso">USU_CURSO</string>
+    <string name="usuario_edad">USU_EDAD</string>
+    <string name="usuario_foto">USU_FOTO</string>
+
+    <!-- SILVIA -->
+    <string name="usu_silvia">silvia@correo.ugr.es</string>
+    <string name="cont_silvia">silvia</string>
+    <string name="nom_silvia">Silvia </string>
+    <string name="car_silvia">Doble Grado de Ingeniería Informática y Matemáticas</string>
+    <string name="cur_silvia">5º</string>
+    <string name="eda_silvia">23</string>
+    <string name="fot_silvia">foto_silvia</string>
+
+    <!-- CARLOTA -->
+    <string name="usu_carlota">carlotavm99@correo.ugr.es</string>
+    <string name="cont_carlota">contraseña</string>
+    <string name="nom_carlota">Carlota Valdivia Manzano</string>
+    <string name="car_carlota">Doble Grado de Ingeniería Informática y Matemáticas</string>
+    <string name="cur_carlota">5º</string>
+    <string name="eda_carlota">22</string>
+    <string name="fot_carlota">foto_carlota</string>
+
+    <!-- ELENA -->
+    <string name="usu_elena">elena@correo.ugr.es</string>
+    <string name="cont_elena">elena</string>
+    <string name="nom_elena">Elena Merelo</string>
+    <string name="car_elena">Doble Grado de Ingeniería Informática y Matemáticas</string>
+    <string name="cur_elena">5º</string>
+    <string name="eda_elena">23</string>
+    <string name="fot_elena">foto_elena</string>
+
+
+    <!-- ADRIAN -->
+    <string name="usu_adrian">adrianrm@correo.ugr.es</string>
+    <string name="cont_adrian">adrian</string>
+    <string name="nom_adrian">Adrián Rodríguez Montero</string>
+    <string name="car_adrian">Doble Grado de Ingeniería Informática y Matemáticas</string>
+    <string name="cur_adrian">5º</string>
+    <string name="eda_adrian">22</string>
+    <string name="fot_adrian">foto_adrian</string>
+
+    <!-- JUAN -->
+    <string name="usu_juan">juan@correo.ugr.es</string>
+    <string name="cont_juan">juan</string>
+    <string name="nom_juan">Juan López</string>
+    <string name="car_juan">Medicina</string>
+    <string name="cur_juan">4º</string>
+    <string name="eda_juan">21</string>
+    <string name="fot_juan">foto_juan</string>
+
+
+    <!--///////////////////////////////////////-->
+
+    <!-- TABLA EVENTO -->
+    <string name="tabla_evento">EVENTO</string>
+    <string name="evento_nombre">EVE_NOMBRE</string>
+    <string name="evento_fecha">EVE_FECHA</string>
+    <string name="evento_hora">EVE_HORA</string>
+    <string name="evento_aforo">EVE_AFORO</string>
+    <string name="evento_grado">EVE_GRADO</string>
+    <string name="evento_ubicacion">EVE_UBICACION</string>
+    <string name="evento_idioma">EVE_IDIOMA</string>
+
+    <!-- ANÁLISIS VECTORIAL -->
+    <string name="nombre_analisisvectorial">Análisis Vectorial</string>
+    <string name="fecha_analisisvectorial">13/12/21</string>
+    <string name="hora_analisisvectorial">18:30</string>
+    <string name="aforo_analisisvectorial">50</string>
+    <string name="grado_analisisvectorial">Doble Grado de Ingeniería Informática y Matemáticas</string>
+    <string name="ubicacion_analisisvectorial">Facultad de Ciencias (Granada)</string>
+    <string name="idioma_analisisvectorial">Español</string>
+
+    <!-- ÁLGEBRA CONMUTATIVA COMPUTACIONAL -->
+    <string name="nombre_algebraconmutativa">Álgebra Conmutativa</string>
+    <string name="fecha_algebraconmutativa">1/12/21</string>
+    <string name="hora_algebraconmutativa">19:00</string>
+    <string name="aforo_algebraconmutativa">70</string>
+    <string name="grado_algebraconmutativa">Doble Grado de Ingeniería Informática y Matemáticas</string>
+    <string name="ubicacion_algebraconmutativa">Facultad de Ciencias (Granada)</string>
+    <string name="idioma_algebraconmutativa">Español</string>
+
+    <!-- ESTADISTICA -->
+    <string name="nombre_estadistica">Estadística Multivariante</string>
+    <string name="fecha_estadistica">14/12/21</string>
+    <string name="hora_estadistica">20:00</string>
+    <string name="aforo_estadistica">50</string>
+    <string name="grado_estadistica">Doble Grado de Ingeniería Informática y Matemáticas</string>
+    <string name="ubicacion_estadistica">Facultad de Ciencias (Granada)</string>
+    <string name="idioma_estadistica">Español</string>
+
+    <!-- VISIÓN POR COMPUTADOR -->
+    <string name="nombre_visionporcomputador">Visión por Computador</string>
+    <string name="fecha_visionporcomputador">2/12/21</string>
+    <string name="hora_visionporcomputador">10:30</string>
+    <string name="aforo_visionporcomputador">60</string>
+    <string name="grado_visionporcomputador">Doble Grado de Ingeniería Informática y Matemáticas</string>
+    <string name="ubicacion_visionporcomputador">ETSIIT (Granada)</string>
+    <string name="idioma_visionporcomputador">Español</string>
+
+    <!-- PROCESADORES DE LENGUAJES -->
+    <string name="nombre_procesadoresdelenguajes">Procesadores de Lenguajes</string>
+    <string name="fecha_procesadoresdelenguajes">10/12/21</string>
+    <string name="hora_procesadoresdelenguajes">12:30</string>
+    <string name="aforo_procesadoresdelenguajes">60</string>
+    <string name="grado_procesadoresdelenguajes">Doble Grado de Ingeniería Informática y Matemáticas</string>
+    <string name="ubicacion_procesadoresdelenguajes">ETSIIT (Granada)</string>
+    <string name="idioma_procesadoresdelenguajes">Español</string>
+
+    <!-- NUEVOS PARADIGMAS -->
+    <string name="nombre_nuevosparadigmas">Nuevos Paradigmas</string>
+    <string name="fecha_nuevosparadigmas">9/12/21</string>
+    <string name="hora_nuevosparadigmas">8:30</string>
+    <string name="aforo_nuevosparadigmas"></string>
+    <string name="grado_nuevosparadigmas">Doble Grado de Ingeniería Informática y Matemáticas</string>
+    <string name="ubicacion_nuevosparadigmas">ETSIIT (Granada)</string>
+    <string name="idioma_nuevosparadigmas">Español</string>
+
+    <!-- PADEL -->
+    <string name="nombre_padel">Pádel</string>
+    <string name="fecha_padel">13/12/21</string>
+    <string name="hora_padel">19:00</string>
+    <string name="aforo_padel">4</string>
+    <string name="grado_padel"></string>
+    <string name="ubicacion_padel">Campus Cartuja (Granada)</string>
+    <string name="idioma_padel">Español</string>
+
+    <!-- CHARLA TFG -->
+    <string name="nombre_charla_tfg">Charla TFG</string>
+    <string name="fecha_charla_tfg">17/12/21</string>
+    <string name="hora_charla_tfg">19:00</string>
+    <string name="aforo_charla_tfg">70</string>
+    <string name="grado_charla_tfg">Doble Grado de Ingeniería Informática y Matemáticass</string>
+    <string name="ubicacion_charla_tfg">ETSIIT (Granada)</string>
+    <string name="idioma_charla_tfg">Español</string>
+
+    <!-- CENA DGIIM -->
+    <string name="nombre_cena_dgiim">Cena Navidad DGIIM</string>
+    <string name="fecha_cena_dgiim">21/12/21</string>
+    <string name="hora_cena_dgiim">21:00</string>
+    <string name="aforo_cena_dgiim">30</string>
+    <string name="grado_cena_dgiim">Doble Grado de Ingeniaría Informática y Matemáticas</string>
+    <string name="ubicacion_cena_dgiim">La Tuttoria (Granada)</string>
+    <string name="idioma_cena_dgiim">Español</string>
+
+    <!-- FÚTBOL -->
+    <string name="nombre_futbol">Fútbol</string>
+    <string name="fecha_futbol">16/12/21</string>
+    <string name="hora_futbol">18:30</string>
+    <string name="aforo_futbol">15</string>
+    <string name="grado_futbol"></string>
+    <string name="ubicacion_futbol">Paseillos (Granada)</string>
+    <string name="idioma_futbol">Español</string>
+
+    <!-- CARRERA SAN ALBERTO -->
+    <string name="nombre_carrera_salberto">Carrera Solidaria San Alberto</string>
+    <string name="fecha_carrera_salberto">15/12/21</string>
+    <string name="hora_carrera_salberto">11:30</string>
+    <string name="aforo_carrera_salberto">100</string>
+    <string name="grado_carrera_salberto"></string>
+    <string name="ubicacion_carrera_salberto">Facultad de Ciencias (Granada)</string>
+    <string name="idioma_carrera_salberto">Español</string>
+
+
+
+    <!--///////////////////////////////////////-->
+
+    <!-- TABLA USUARIO-EVENTO -->
+    <string name="tabla_usuario_evento">USUARIO_EVENTO</string>
+    <string name="ue_id_usuario">UE_ID_USUARIO</string>
+    <string name="ue_id_evento">UE_ID_EVENTO</string>
+
+
+</resources>

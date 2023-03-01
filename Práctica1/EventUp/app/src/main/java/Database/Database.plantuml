@@ -1,0 +1,336 @@
+@startuml
+
+title __DATABASE's Class Diagram__\n
+
+  namespace Database {
+    class Database.AllEventsAdapter {
+        ~ context : Context
+        ~ eventos : ArrayList<Evento>
+        ~ user_foto : String
+        ~ user_grado : String
+        ~ user_nombre : String
+        ~ user_usuario : String
+        + AllEventsAdapter()
+        + getItemCount()
+        + onBindViewHolder()
+        + onCreateViewHolder()
+    }
+  }
+  
+
+  namespace Database {
+    class Database.AllEventsAdapter.MyViewHolderEU {
+        ~ button_apuntarse_evento : Button
+        ~ eventoaforo : TextView
+        ~ eventofecha : TextView
+        ~ eventogrado : TextView
+        ~ eventohora : TextView
+        ~ eventoidioma : TextView
+        ~ eventonombre : TextView
+        ~ eventoubi : TextView
+        + MyViewHolderEU()
+    }
+  }
+  
+
+  namespace Database {
+    class Database.DBHelper {
+        {static} + nameDB : String
+        - AFORO : String
+        - CARRERA : String
+        - CONTRASEÑA : String
+        - CREATE_TABLE_EVENTO : String
+        - CREATE_TABLE_USUARIO : String
+        - CREATE_TABLE_USUARIO_EVENTO : String
+        - CURSO : String
+        - EDAD : String
+        - FECHA : String
+        - FOTO : String
+        - GRADO : String
+        - HORA : String
+        - IDIOMA : String
+        - ID_EVENTO : String
+        - ID_USUARIO : String
+        - INSERT_ADRIAN_ALGEBRACONMUTATIVA_INTO_USUARIO_EVENTO : String
+        - INSERT_ADRIAN_ANALISISVECTORIAL_INTO_USUARIO_EVENTO : String
+        - INSERT_ADRIAN_ESTADISTICA_INTO_USUARIO_EVENTO : String
+        - INSERT_ADRIAN_FUTBOL_INTO_USUARIO_EVENTO : String
+        - INSERT_ADRIAN_INTO_USUARIO : String
+        - INSERT_ADRIAN_NUEVOSPARADIGMAS_INTO_USUARIO_EVENTO : String
+        - INSERT_ADRIAN_PROCESADORESDELENGUAJES_INTO_USUARIO_EVENTO : String
+        - INSERT_ADRIAN_VISIONPORCOMPUTADOR_INTO_USUARIO_EVENTO : String
+        - INSERT_ALGEBRACONMUTATIVA_INTO_EVENTO : String
+        - INSERT_ANALISISVECTORIAL_INTO_EVENTO : String
+        - INSERT_CARLOTA_ALGEBRACONMUTATIVA_INTO_USUARIO_EVENTO : String
+        - INSERT_CARLOTA_ANALISISVECTORIAL_INTO_USUARIO_EVENTO : String
+        - INSERT_CARLOTA_CHARLA_TFG_INTO_USUARIO_EVENTO : String
+        - INSERT_CARLOTA_ESTADISTICA_INTO_USUARIO_EVENTO : String
+        - INSERT_CARLOTA_INTO_USUARIO : String
+        - INSERT_CARLOTA_NUEVOSPARADIGMAS_INTO_USUARIO_EVENTO : String
+        - INSERT_CARLOTA_PROCESADORESDELENGUAJES_INTO_USUARIO_EVENTO : String
+        - INSERT_CARLOTA_VISIONPORCOMPUTADOR_INTO_USUARIO_EVENTO : String
+        - INSERT_CARRERA_SALBERTO_INTO_EVENTO : String
+        - INSERT_CENA_DGIIM_INTO_EVENTO : String
+        - INSERT_CHARLA_TFG_INTO_EVENTO : String
+        - INSERT_ELENA_ALGEBRACONMUTATIVA_INTO_USUARIO_EVENTO : String
+        - INSERT_ELENA_ANALISISVECTORIAL_INTO_USUARIO_EVENTO : String
+        - INSERT_ELENA_ESTADISTICA_INTO_USUARIO_EVENTO : String
+        - INSERT_ELENA_INTO_USUARIO : String
+        - INSERT_ELENA_NUEVOSPARADIGMAS_INTO_USUARIO_EVENTO : String
+        - INSERT_ELENA_PADEL_INTO_USUARIO_EVENTO : String
+        - INSERT_ELENA_PROCESADORESDELENGUAJES_INTO_USUARIO_EVENTO : String
+        - INSERT_ELENA_VISIONPORCOMPUTADOR_INTO_USUARIO_EVENTO : String
+        - INSERT_ESTADISTICA_INTO_EVENTO : String
+        - INSERT_FUTBOL_INTO_EVENTO : String
+        - INSERT_JUAN_INTO_USUARIO : String
+        - INSERT_NUEVOSPARADIGMAS_INTO_EVENTO : String
+        - INSERT_PADEL_INTO_EVENTO : String
+        - INSERT_PROCESADORESDELENGUAJES_INTO_EVENTO : String
+        - INSERT_SILVIA_ALGEBRACONMUTATIVA_INTO_USUARIO_EVENTO : String
+        - INSERT_SILVIA_ANALISISVECTORIAL_INTO_USUARIO_EVENTO : String
+        - INSERT_SILVIA_CARRERA_SALBERTO_INTO_USUARIO_EVENTO : String
+        - INSERT_SILVIA_ESTADISTICA_INTO_USUARIO_EVENTO : String
+        - INSERT_SILVIA_INTO_USUARIO : String
+        - INSERT_SILVIA_NUEVOSPARADIGMAS_INTO_USUARIO_EVENTO : String
+        - INSERT_SILVIA_PROCESADORESDELENGUAJES_INTO_USUARIO_EVENTO : String
+        - INSERT_SILVIA_VISIONPORCOMPUTADOR_INTO_USUARIO_EVENTO : String
+        - INSERT_VISIONPORCOMPUTADOR_INTO_EVENTO : String
+        - NOMBRE : String
+        - NOMBRE_EVENTO : String
+        - TABLA_EVENTO : String
+        - TABLA_USUARIO : String
+        - TABLA_USUARIO_EVENTO : String
+        - UBICACION : String
+        - USUARIO : String
+        - VALUE_AFORO_ALGEBRACONMUTATIVA : String
+        - VALUE_AFORO_ANALISISVECTORIAL : String
+        - VALUE_AFORO_CARRERA_SALBERTO : String
+        - VALUE_AFORO_CENA_DGIIM : String
+        - VALUE_AFORO_CHARLA_TFG : String
+        - VALUE_AFORO_ESTADISTICA : String
+        - VALUE_AFORO_FUTBOL : String
+        - VALUE_AFORO_NUEVOSPARADIGMAS : String
+        - VALUE_AFORO_PADEL : String
+        - VALUE_AFORO_PROCESADORESDELENGUAJES : String
+        - VALUE_AFORO_VISIONPORCOMPUTADOR : String
+        - VALUE_CAR_ADRIAN : String
+        - VALUE_CAR_CARLOTA : String
+        - VALUE_CAR_ELENA : String
+        - VALUE_CAR_JUAN : String
+        - VALUE_CAR_SILVIA : String
+        - VALUE_CONT_ADRIAN : String
+        - VALUE_CONT_CARLOTA : String
+        - VALUE_CONT_ELENA : String
+        - VALUE_CONT_JUAN : String
+        - VALUE_CONT_SILVIA : String
+        - VALUE_CUR_ADRIAN : String
+        - VALUE_CUR_CARLOTA : String
+        - VALUE_CUR_ELENA : String
+        - VALUE_CUR_JUAN : String
+        - VALUE_CUR_SILVIA : String
+        - VALUE_EDA_ADRIAN : String
+        - VALUE_EDA_CARLOTA : String
+        - VALUE_EDA_ELENA : String
+        - VALUE_EDA_JUAN : String
+        - VALUE_EDA_SILVIA : String
+        - VALUE_FECHA_ALGEBRACONMUTATIVA : String
+        - VALUE_FECHA_ANALISISVECTORIAL : String
+        - VALUE_FECHA_CARRERA_SALBERTO : String
+        - VALUE_FECHA_CENA_DGIIM : String
+        - VALUE_FECHA_CHARLA_TFG : String
+        - VALUE_FECHA_ESTADISTICA : String
+        - VALUE_FECHA_FUTBOL : String
+        - VALUE_FECHA_NUEVOSPARADIGMAS : String
+        - VALUE_FECHA_PADEL : String
+        - VALUE_FECHA_PROCESADORESDELENGUAJES : String
+        - VALUE_FECHA_VISIONPORCOMPUTADOR : String
+        - VALUE_FOT_ADRIAN : String
+        - VALUE_FOT_CARLOTA : String
+        - VALUE_FOT_ELENA : String
+        - VALUE_FOT_JUAN : String
+        - VALUE_FOT_SILVIA : String
+        - VALUE_GRADO_ALGEBRACONMUTATIVA : String
+        - VALUE_GRADO_ANALISISVECTORIAL : String
+        - VALUE_GRADO_CARRERA_SALBERTO : String
+        - VALUE_GRADO_CENA_DGIIM : String
+        - VALUE_GRADO_CHARLA_TFG : String
+        - VALUE_GRADO_ESTADISTICA : String
+        - VALUE_GRADO_FUTBOL : String
+        - VALUE_GRADO_NUEVOSPARADIGMAS : String
+        - VALUE_GRADO_PADEL : String
+        - VALUE_GRADO_PROCESADORESDELENGUAJES : String
+        - VALUE_GRADO_VISIONPORCOMPUTADOR : String
+        - VALUE_HORA_ALGEBRACONMUTATIVA : String
+        - VALUE_HORA_ANALISISVECTORIAL : String
+        - VALUE_HORA_CARRERA_SALBERTO : String
+        - VALUE_HORA_CENA_DGIIM : String
+        - VALUE_HORA_CHARLA_TFG : String
+        - VALUE_HORA_ESTADISTICA : String
+        - VALUE_HORA_FUTBOL : String
+        - VALUE_HORA_NUEVOSPARADIGMAS : String
+        - VALUE_HORA_PADEL : String
+        - VALUE_HORA_PROCESADORESDELENGUAJES : String
+        - VALUE_HORA_VISIONPORCOMPUTADOR : String
+        - VALUE_IDIOMA_ALGEBRACONMUTATIVA : String
+        - VALUE_IDIOMA_ANALISISVECTORIAL : String
+        - VALUE_IDIOMA_CARRERA_SALBERTO : String
+        - VALUE_IDIOMA_CENA_DGIIM : String
+        - VALUE_IDIOMA_CHARLA_TFG : String
+        - VALUE_IDIOMA_ESTADISTICA : String
+        - VALUE_IDIOMA_FUTBOL : String
+        - VALUE_IDIOMA_NUEVOSPARADIGMAS : String
+        - VALUE_IDIOMA_PADEL : String
+        - VALUE_IDIOMA_PROCESADORESDELENGUAJES : String
+        - VALUE_IDIOMA_VISIONPORCOMPUTADOR : String
+        - VALUE_NOMBRE_ALGEBRACONMUTATIVA : String
+        - VALUE_NOMBRE_ANALISISVECTORIAL : String
+        - VALUE_NOMBRE_CARRERA_SALBERTO : String
+        - VALUE_NOMBRE_CENA_DGIIM : String
+        - VALUE_NOMBRE_CHARLA_TFG : String
+        - VALUE_NOMBRE_ESTADISTICA : String
+        - VALUE_NOMBRE_FUTBOL : String
+        - VALUE_NOMBRE_NUEVOSPARADIGMAS : String
+        - VALUE_NOMBRE_PADEL : String
+        - VALUE_NOMBRE_PROCESADORESDELENGUAJES : String
+        - VALUE_NOMBRE_VISIONPORCOMPUTADOR : String
+        - VALUE_NOM_ADRIAN : String
+        - VALUE_NOM_CARLOTA : String
+        - VALUE_NOM_ELENA : String
+        - VALUE_NOM_JUAN : String
+        - VALUE_NOM_SILVIA : String
+        - VALUE_UBICACION_ALGEBRACONMUTATIVA : String
+        - VALUE_UBICACION_ANALISISVECTORIAL : String
+        - VALUE_UBICACION_CARRERA_SALBERTO : String
+        - VALUE_UBICACION_CENA_DGIIM : String
+        - VALUE_UBICACION_CHARLA_TFG : String
+        - VALUE_UBICACION_ESTADISTICA : String
+        - VALUE_UBICACION_FUTBOL : String
+        - VALUE_UBICACION_NUEVOSPARADIGMAS : String
+        - VALUE_UBICACION_PADEL : String
+        - VALUE_UBICACION_PROCESADORESDELENGUAJES : String
+        - VALUE_UBICACION_VISIONPORCOMPUTADOR : String
+        - VALUE_USU_ADRIAN : String
+        - VALUE_USU_CARLOTA : String
+        - VALUE_USU_ELENA : String
+        - VALUE_USU_JUAN : String
+        - VALUE_USU_SILVIA : String
+        {static} - dbEventUp : SQLiteDatabase
+        {static} - versionDB : int
+        + DBHelper()
+        + asignarEvento()
+        + crearEvento()
+        + desasignarEvento()
+        + eliminarEvento()
+        + modificarEvento()
+        + onCreate()
+        + onUpgrade()
+        - crearValores()
+        - inicializarValores()
+        - insertarValores()
+    }
+  }
+  
+
+  namespace Database {
+    class Database.Evento {
+        - aforo : int
+        - fecha : String
+        - grado : String
+        - hora : String
+        - idioma : String
+        - nombre : String
+        - ubicacion : String
+        + Evento()
+        + getAforo()
+        + getFecha()
+        + getGrado()
+        + getHora()
+        + getIdioma()
+        + getNombre()
+        + getUbicacion()
+        + setAforo()
+        + setFecha()
+        + setGrado()
+        + setHora()
+        + setIdioma()
+        + setNombre()
+        + setUbicacion()
+    }
+  }
+  
+
+  namespace Database {
+    class Database.EventoAdapter {
+        ~ activity : FragmentActivity
+        ~ context : Context
+        ~ eventos : ArrayList<Evento>
+        ~ user_foto : String
+        ~ user_grado : String
+        ~ user_nombre : String
+        ~ user_usuario : String
+        + EventoAdapter()
+        + getItemCount()
+        + onBindViewHolder()
+        + onCreateViewHolder()
+    }
+  }
+  
+
+  namespace Database {
+    class Database.EventoAdapter.MyViewHolder {
+        ~ boton_editar : Button
+        ~ button_como_llegar : Button
+        ~ eventofecha : TextView
+        ~ eventohora : TextView
+        ~ eventonombre : TextView
+        ~ eventoubi : TextView
+        + MyViewHolder()
+    }
+  }
+  
+
+  namespace Database {
+    class Database.Usuario {
+        - carrera : String
+        - curso : int
+        - edad : int
+        - foto : String
+        - login : String
+        - nombre : String
+        - password : String
+        + Usuario()
+        + getCarrera()
+        + getCurso()
+        + getEdad()
+        + getFoto()
+        + getLogin()
+        + getNombre()
+        + getPassword()
+        + setCarrera()
+        + setCurso()
+        + setEdad()
+        + setFoto()
+        + setLogin()
+        + setNombre()
+        + setPassword()
+    }
+  }
+  
+
+  Database.AllEventsAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  Database.AllEventsAdapter +-down- Database.AllEventsAdapter.MyViewHolderEU
+  Database.AllEventsAdapter.MyViewHolderEU -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  Database.DBHelper -up-|> android.database.sqlite.SQLiteOpenHelper
+  Database.EventoAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  Database.EventoAdapter +-down- Database.EventoAdapter.MyViewHolder
+  Database.EventoAdapter.MyViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

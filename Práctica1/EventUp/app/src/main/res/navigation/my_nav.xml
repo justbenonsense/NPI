@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/misEventos">
+
+    <fragment
+        android:id="@+id/misEventos"
+        android:name="com.example.eventupdiseo.MisEventos"
+        android:label="fragment_mis_eventos"
+        tools:layout="@layout/fragment_mis_eventos" />
+    <fragment
+        android:id="@+id/eventUp"
+        android:name="com.example.eventupdiseo.EventUp"
+        android:label="fragment_event_up"
+        tools:layout="@layout/fragment_event_up" />
+    <fragment
+        android:id="@+id/miPerfil"
+        android:name="com.example.eventupdiseo.MiPerfil"
+        android:label="fragment_mi_perfil"
+        tools:layout="@layout/fragment_mi_perfil" />
+</navigation>

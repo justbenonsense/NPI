@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/misEventos"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_yellow"
+    tools:context=".CrearEvento">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_crear_evento"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:background="@color/nice_blue"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/button_crear_evento"
+                android:layout_width="48dp"
+                android:layout_height="52dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/nice_blue"
+                android:src="@drawable/ic_back_white"
+                app:layout_constraintBottom_toBottomOf="@+id/toolbar_tui"
+                app:layout_constraintEnd_toEndOf="@+id/toolbar_tui"
+                app:layout_constraintHorizontal_bias="0.041"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.494"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/texto_crear_evento"
+                style="@style/Base.CardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/crear_evento"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/dibujo_lapiz"
+                style="@style/circleImageView"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_pencil"
+                app:layout_constraintBottom_toBottomOf="@+id/toolbar_tui"
+                app:layout_constraintEnd_toEndOf="@+id/toolbar_tui"
+                app:layout_constraintHorizontal_bias="0.041"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.494" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/nice_blue" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="414dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="-90dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_evento"
+        android:orientation="vertical"
+        android:paddingTop="22dp"
+        android:paddingBottom="50dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg_evento"
+            android:orientation="vertical"
+            android:paddingBottom="22dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/add_event_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Añade título"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/event_title_added"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/bg_inputtask"
+                    android:hint="Nombre del evento..."
+                    android:inputType="text"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/grey"
+                    android:textColorHint="@color/grey" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/add_event_ubi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Ubicación"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/event_ubi_added"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/bg_inputtask"
+                    android:hint="Ubicación del evento..."
+                    android:inputType="text"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/grey"
+                    android:textColorHint="@color/grey" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/add_event_fecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Fecha"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/event_fecha_added"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/bg_inputtask"
+                    android:hint="Fecha del evento..."
+                    android:inputType="date"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/grey"
+                    android:textColorHint="@color/grey" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/add_event_hora"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Hora"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/event_hora_added"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:background="@drawable/bg_inputtask"
+                    android:hint="Hora del evento..."
+                    android:inputType="datetime"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/grey"
+                    android:textColorHint="@color/grey" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/add_event_grado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Grado"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/event_grado_added"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/bg_inputtask"
+                    android:hint="Grado del evento..."
+                    android:inputType="text"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/grey"
+                    android:textColorHint="@color/grey" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/add_event_aforo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Aforo"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/event_aforo_added"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/bg_inputtask"
+                    android:hint="Aforo del evento..."
+                    android:inputType="number"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/grey"
+                    android:textColorHint="@color/grey" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/add_event_idioma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Idioma"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/event_idioma_added"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/bg_inputtask"
+                    android:hint="Idioma del evento..."
+                    android:inputType="text"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/grey"
+                    android:textColorHint="@color/grey" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_añadir_evento"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Añadir Evento"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:background="@drawable/bgbtncreate"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+
+
+
+
+</LinearLayout>

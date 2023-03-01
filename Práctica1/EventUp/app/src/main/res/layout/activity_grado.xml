@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_yellow"
+    tools:context=".Grado">
+
+    <android.widget.Toolbar
+        android:id="@+id/toolbar_grado"
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:layout_marginBottom="115dp"
+        android:background="@color/nice_blue"
+        android:elevation="0dp"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/button_back_grado"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:background="@color/nice_blue"
+                android:src="@drawable/ic_back_white"
+                app:layout_constraintBottom_toBottomOf="@+id/toolbar_grado"
+                app:layout_constraintEnd_toEndOf="@+id/toolbar_grado"
+                app:layout_constraintHorizontal_bias="0.041"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.494"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doble Grado de Ingeniería Informática y Matemáticas"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="25dp"
+                android:paddingLeft="10dp"/>
+
+        </LinearLayout>
+    </android.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/texto_facultad_grado"
+        style="@style/Base.CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facultad:"
+        android:textColor="@color/dark_blue"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/texto_nombre_facultad_grado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_grado"
+        app:layout_constraintVertical_bias="0.477" />
+
+    <TextView
+        android:id="@+id/texto_nombre_facultad_grado"
+        style="@style/Base.CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facultad de Ciencias"
+        android:textColor="@color/dark_grey"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/texto_direccion_grado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_facultad_grado" />
+
+    <TextView
+        android:id="@+id/texto_direccion_grado"
+        style="@style/Base.CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dirección: "
+        android:textColor="@color/dark_grey"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/texto_direccion_facultad_grado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_nombre_facultad_grado" />
+
+    <TextView
+        android:id="@+id/texto_direccion_facultad_grado"
+        style="@style/Base.CardView"
+        android:layout_width="328dp"
+        android:layout_height="43dp"
+        android:text="Avenida de la Fuente Nueva, s/n, 18071 Granada"
+        android:textColor="@color/grey"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/texto_nombre_facultad_grado2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_direccion_grado" />
+
+    <TextView
+        android:id="@+id/texto_nombre_facultad_grado2"
+        style="@style/Base.CardView"
+        android:layout_width="296dp"
+        android:layout_height="90dp"
+        android:text="Escuela Técnica Superior de Ingeniería Informática y Telecomunicaciones"
+        android:textColor="@color/dark_grey"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/texto_direccion_grado2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_direccion_facultad_grado" />
+
+    <TextView
+        android:id="@+id/texto_direccion_grado2"
+        style="@style/Base.CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dirección: "
+        android:textColor="@color/dark_grey"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/texto_direccion_facultad_grado2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_nombre_facultad_grado2" />
+
+    <TextView
+        android:id="@+id/texto_direccion_facultad_grado2"
+        style="@style/Base.CardView"
+        android:layout_width="346dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="64dp"
+        android:text="C. Periodista Daniel Saucedo Aranda, s/n, 18014 Granada"
+        android:textColor="@color/grey"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_direccion_grado2" />
+
+    <ImageButton
+        android:id="@+id/button_ubi_facultad"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="17dp"
+        android:background="@color/light_yellow"
+        android:src="@drawable/ic_place"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/texto_nombre_facultad_grado"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_grado"
+        app:layout_constraintVertical_bias="0.147"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/button_ubi_facultad2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/light_yellow"
+        android:src="@drawable/ic_place"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/texto_nombre_facultad_grado2"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_grado"
+        app:layout_constraintVertical_bias="0.548"
+        tools:ignore="SpeakableTextPresentCheck" />" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,334 @@
+@startuml
+
+title __EVENTUPDISEO's Class Diagram__\n
+
+  namespace com.example.eventupdiseo {
+    class com.example.eventupdiseo.Calificaciones {
+        ~ user_foto : String
+        ~ user_grado : String
+        ~ user_nombre : String
+        ~ user_usuario : String
+        - button_back_calificaciones : ImageButton
+        - text_grado : TextView
+        - text_nombre : TextView
+        # onCreate()
+        - showAllUserData()
+    }
+  }
+  
+
+  namespace com.example.eventupdiseo {
+    class com.example.eventupdiseo.CrearEvento {
+        ~ user_foto : String
+        ~ user_grado : String
+        ~ user_nombre : String
+        ~ user_usuario : String
+        - addaforo : TextView
+        - addfecha : TextView
+        - addgrado : TextView
+        - addhora : TextView
+        - addidioma : TextView
+        - addtitulo : TextView
+        - addubicacion : TextView
+        - aforo : EditText
+        - button_añadir_evento : Button
+        - button_back_crear_evento : ImageButton
+        - fecha : EditText
+        - grado : EditText
+        - hora : EditText
+        - idioma : EditText
+        - linearLayout : LinearLayout
+        - titlepage : TextView
+        - titulo : EditText
+        - ubicacion : EditText
+        + crearEvento()
+        + onOptionsItemSelected()
+        # onCreate()
+        - datosCrearEventoCorrectos()
+        - showAllUserData()
+        - validateFecha()
+        - validateHora()
+        - validateTitle()
+        - validateUbicacion()
+    }
+  }
+  
+
+  namespace com.example.eventupdiseo {
+    class com.example.eventupdiseo.EditarEvento {
+        + AcelListener : SensorEventListener
+        + gyroListener : SensorEventListener
+        ~ cont : Integer
+        ~ contA : Integer
+        ~ current_time : long
+        ~ current_time_A : long
+        ~ evento_aforo : Integer
+        ~ evento_fecha : String
+        ~ evento_grado : String
+        ~ evento_hora : String
+        ~ evento_idioma : String
+        ~ evento_nombre : String
+        ~ evento_ubicacion : String
+        ~ last_update : long
+        ~ last_update_A : long
+        ~ sensor : Sensor
+        ~ sensorA : Sensor
+        ~ titulo_anterior : String
+        ~ user_foto : String
+        ~ user_grado : String
+        ~ user_nombre : String
+        ~ user_usuario : String
+        - aforo : EditText
+        - button_back_editar_evento : ImageButton
+        - button_editar_evento : Button
+        - button_eliminar_evento : Button
+        - editaforo : TextView
+        - editfecha : TextView
+        - editgrado : TextView
+        - edithora : TextView
+        - editidioma : TextView
+        - edittitulo : TextView
+        - editubicacion : TextView
+        - fecha : EditText
+        - grado : EditText
+        - hora : EditText
+        - idioma : EditText
+        - linearLayout : LinearLayout
+        - sensorManager : SensorManager
+        - sensorManagerA : SensorManager
+        - titlepage : TextView
+        - titulo : TextView
+        - ubicacion : EditText
+        + editarEvento()
+        + eliminarEvento()
+        + onOptionsItemSelected()
+        + onResume()
+        + onStop()
+        # onCreate()
+        - datosEditarEventoCorrectos()
+        - showAllEventData()
+        - showAllUserData()
+        - validateFecha()
+        - validateHora()
+        - validateTitle()
+        - validateUbicacion()
+    }
+  }
+  
+
+  namespace com.example.eventupdiseo {
+    class com.example.eventupdiseo.EventUp {
+        ~ all_events : ArrayList<Evento>
+        ~ button_filtros_evento : ImageButton
+        ~ datosFiltro : ArrayList<String>
+        ~ evento_aforo : Integer
+        ~ evento_fecha : String
+        ~ evento_grado : String
+        ~ evento_hora : String
+        ~ evento_idioma : String
+        ~ evento_nombre : String
+        ~ evento_ubicacion : String
+        ~ lista_eventos : RecyclerView
+        ~ sentencia_sql : String
+        ~ texto_event_up : TextView
+        ~ tipoFiltro : ArrayList<Integer>
+        ~ user_foto : String
+        ~ user_grado : String
+        ~ user_nombre : String
+        ~ user_usuario : String
+        + EventUp()
+        {static} + newInstance()
+        + onCreate()
+        + onCreateView()
+        - hayFiltros()
+        - showAllEventFilterData()
+        - showAllUserData()
+    }
+  }
+  
+
+  namespace com.example.eventupdiseo {
+    class com.example.eventupdiseo.FilterActivity {
+        ~ user_foto : String
+        ~ user_grado : String
+        ~ user_nombre : String
+        ~ user_usuario : String
+        - addaforo : TextView
+        - addfecha : TextView
+        - addgrado : TextView
+        - addhora : TextView
+        - addidioma : TextView
+        - addtitulo : TextView
+        - addubicacion : TextView
+        - aforo : EditText
+        - button_back_filtrar_evento : ImageButton
+        - button_filtrar_evento : Button
+        - fecha : EditText
+        - grado : EditText
+        - hora : EditText
+        - idioma : EditText
+        - linearLayout : LinearLayout
+        - titlepage : TextView
+        - titulo : EditText
+        - ubicacion : EditText
+        + onOptionsItemSelected()
+        # onCreate()
+        - showAllUserData()
+    }
+  }
+  
+
+  namespace com.example.eventupdiseo {
+    class com.example.eventupdiseo.Grado {
+        ~ user_foto : String
+        ~ user_grado : String
+        ~ user_nombre : String
+        ~ user_usuario : String
+        - button_back_grado : ImageButton
+        - button_ubi_facultad : ImageButton
+        - button_ubi_facultad2 : ImageButton
+        # onCreate()
+        - showAllUserData()
+    }
+  }
+  
+
+  namespace com.example.eventupdiseo {
+    class com.example.eventupdiseo.LoginActivity {
+        ~ bottomAnim : Animation
+        ~ contraseña : TextInputLayout
+        ~ fondologin : ImageView
+        ~ login_button : Button
+        ~ logo : ImageView
+        ~ topAnim : Animation
+        ~ usuario : TextInputLayout
+        + loginUser()
+        # onCreate()
+        - isUser()
+        - validatePassword()
+        - validateUsername()
+    }
+  }
+  
+
+  namespace com.example.eventupdiseo {
+    class com.example.eventupdiseo.MainActivity {
+        ~ company : ImageView
+        ~ logo : ImageView
+        {static} - SPLASH_SCREEN : int
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.eventupdiseo {
+    class com.example.eventupdiseo.MenuActivity {
+        ~ sensor : Sensor
+        ~ sensorAcel : SensorEventListener
+        ~ sensorAcelerometro : Sensor
+        ~ sensorMan : SensorManager
+        ~ sensorManager : SensorManager
+        ~ sensorProx : SensorEventListener
+        ~ user_foto : String
+        ~ user_grado : String
+        ~ user_nombre : String
+        ~ user_usuario : String
+        - cambio : boolean
+        - cont : int
+        - current_time : long
+        - last_update : long
+        - sensorDisp : Boolean
+        - sensorDisponible : Boolean
+        # onCreate()
+        # onPause()
+        # onResume()
+        - cambioVista()
+        - showAllUserData()
+    }
+  }
+  
+
+  namespace com.example.eventupdiseo {
+    class com.example.eventupdiseo.MiPerfil {
+        ~ toolbar : Toolbar
+        ~ user_foto : String
+        ~ user_grado : String
+        ~ user_nombre : String
+        ~ user_usuario : String
+        - button_calificaciones : Button
+        - button_grado : Button
+        - button_tui : Button
+        - image_foto : ImageView
+        - text_nombre : TextView
+        + MiPerfil()
+        {static} + newInstance()
+        + onCreate()
+        + onCreateOptionsMenu()
+        + onCreateView()
+        + onOptionsItemSelected()
+        - showAllUserData()
+    }
+  }
+  
+
+  namespace com.example.eventupdiseo {
+    class com.example.eventupdiseo.MisEventos {
+        ~ button_crear_evento : ImageButton
+        ~ endpage : TextView
+        ~ lista_eventos : RecyclerView
+        ~ mis_eventos : ArrayList<Evento>
+        ~ texto_mis_eventos : TextView
+        ~ user_foto : String
+        ~ user_grado : String
+        ~ user_nombre : String
+        ~ user_usuario : String
+        + MisEventos()
+        {static} + newInstance()
+        + onCreate()
+        + onCreateView()
+        - showAllUserData()
+    }
+  }
+  
+
+  namespace com.example.eventupdiseo {
+    class com.example.eventupdiseo.Tui {
+        ~ user_foto : String
+        ~ user_grado : String
+        ~ user_nombre : String
+        ~ user_usuario : String
+        - button_back_tui : ImageButton
+        - image_foto : ImageView
+        - text_nombre : TextView
+        - toolbar : Toolbar
+        + onOptionsItemSelected()
+        # onCreate()
+        - showAllUserData()
+    }
+  }
+  
+
+  com.example.eventupdiseo.Calificaciones -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.eventupdiseo.CrearEvento -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.eventupdiseo.EditarEvento -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.eventupdiseo.EventUp -up-|> androidx.fragment.app.Fragment
+  com.example.eventupdiseo.EventUp o-- Database.AllEventsAdapter : eventoAdapter
+  com.example.eventupdiseo.FilterActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.eventupdiseo.Grado -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.eventupdiseo.LoginActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.eventupdiseo.MainActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.eventupdiseo.MenuActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.eventupdiseo.MiPerfil -up-|> androidx.fragment.app.Fragment
+  com.example.eventupdiseo.MisEventos -up-|> androidx.fragment.app.Fragment
+  com.example.eventupdiseo.MisEventos o-- Database.EventoAdapter : eventoAdapter
+  com.example.eventupdiseo.Tui -up-|> androidx.appcompat.app.AppCompatActivity
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

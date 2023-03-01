@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/bg_evento"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="157dp"
+        android:layout_height="145dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_evento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:text="NPI clase teoría"
+            android:textColor="@color/dark_blue"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/evento_ubi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="En la ETSIIT"
+            android:textColor="@color/grey"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="125dp"
+        android:layout_height="134dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fecha_evento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Hoy"
+            android:textColor="@color/pink"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/hora_evento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="A las 12:00"
+            android:textColor="@color/pink"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_como_llegar"
+            android:layout_width="69dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="8dp"
+            android:text="GO"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+        <!-->
+        <Button
+            android:id="@+id/boton_editar"
+            android:layout_width="69dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:text="Edit"
+            android:textColor="@color/white"
+            android:textSize="10sp" /><!-->
+
+    </LinearLayout>
+
+
+</LinearLayout>
